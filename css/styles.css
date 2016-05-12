@@ -1,0 +1,47 @@
+
+body, html {
+    margin: 0px auto;
+    padding: 0px;
+}
+
+header {
+  text-align: center;
+  background-size: cover;
+}
+
+.nav-text {
+  color: white;
+}
+
+
+ul {
+  padding: 22px;
+  background: #0c4b26;
+}
+li {
+	font-size: 17px;
+  display: inline;
+  padding: 0px 110px 0px 10px;
+  }
+  li a{
+    text-decoration: none;
+  }
+  .float{
+    text-align: right;
+    }
+ .left{
+  
+  width: 30%;
+  background-color: blue
+ } 
+ .right{
+  width: 70%;
+  background-color: red;
+}
+section{
+  width: 100%;
+   
+}
+div{
+  float: left;
+}
