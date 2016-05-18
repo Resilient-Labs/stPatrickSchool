@@ -7,6 +7,9 @@ a {
 .overlay-link {
   text-decoration: underline;
 }
+.no-margin {
+  margin: 0;
+}
 
 .margin {
   margin: 5px;
@@ -19,6 +22,9 @@ a {
 .line-padder {
   padding: 30px;
 }
+
+.sps-black {
+  color: black;
 }
 
 .sps-white {
@@ -40,7 +46,7 @@ a {
 .sps-light-green {
   background-color: #6B9354;
 }
-  
+
 .sps-greenish {
   background-color: #90A747;
 }
@@ -228,7 +234,7 @@ html, body {
     font-size: 40pt;
   }
 
-.main-container .inner-container section div p {
+  .main-container .inner-container section div p {
     font-size: 20pt;
   }
 
@@ -257,10 +263,10 @@ html, body {
 }
 
 .overlay-text {
-    width: 40%;
-    margin: 425px auto 30px 0;
-    background: rgba(0,0,0,0.5);
-    padding: 20px;
+  width: 40%;
+  margin: 425px auto 30px 0;
+  background: rgba(0,0,0,0.5);
+  padding: 20px;
 }
 
 @media (min-width: 0px) and (max-width: 480px) {
@@ -296,7 +302,7 @@ html, body {
     margin: 425px auto 50px 0;
     background: rgba(0,0,0,0.5);
     padding: 20px;
-}
+  }
 }
 
 
@@ -540,10 +546,14 @@ footer .main-container .inner-container .footer-divider {
 
 .main-container .inner-container .about-sps-semi {
   font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
+  font-size: 13pt;
+  font-weight: 100;
 }
 
 .main-container .inner-container .about-sps-text {
   font-family: 'PT Sans', sans-serif;
+  text-decoration: none;
 }
 
 @media (max-width: 980px) {
@@ -557,12 +567,69 @@ footer .main-container .inner-container .footer-divider {
   }
 
   .text-section .line-padder {
-      padding: 0;
-    }
+    padding: 0;
+  }
 
   .top-spacer {
     margin: 0;
   }
+}
+
+/***************************************************************
+****************************************************************
+****************************************************************
+*****************************Article****************************
+****************************************************************
+****************************************************************
+****************************************************************
+***************************************************************/
+
+
+.overlay-text-article {
+  width: 100%;
+  margin: 0 auto 0 auto;
+  background: rgba(0,0,0,0.5);
+  padding: 15px 0;
+}
+
+.checkItOut {
+  width: 80%;
+  display: block;
+  margin: 0 auto;
+}
+
+.article-link {
+  text-transform: capitalize;
+  text-decoration: underline;
+  text-align: center;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.article-img {
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.previous-next {
+  float: left;
+  width: 50%;
+}
+
+.link-left-article {
+  text-align: left;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15pt;
+}
+
+.link-right-article {
+  text-align: right;
+  text-transform: capitalize;
+  text-decoration: underline;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 15pt;
 }
 
 /***************************************************************
