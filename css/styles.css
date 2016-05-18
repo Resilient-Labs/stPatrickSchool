@@ -652,6 +652,43 @@ footer .main-container .inner-container .footer-divider {
 
 
 
+/***************************************************************
+****************************************************************
+****************************************************************
+********************************News****************************
+****************************************************************
+****************************************************************
+****************************************************************
+***************************************************************/
+
+
+.main-container .inner-container .news-section {
+  width: 100%;
+  min-height: 300px;
+}
+
+.main-container .inner-container .news-section div {
+  float: left;
+  width: 31.8%;
+  padding: .7%;
+}
+
+.main-container .inner-container .news-section img {
+  width: 100%;
+  height: auto;
+}
+
+.main-container .inner-container .news-section figcaption {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.news-title {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 12pt;
+}
+
+
+
 
 
 
