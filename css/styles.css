@@ -11,6 +11,12 @@ a {
   margin: 0;
 }
 
+.center {
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
 .margin {
   margin: 5px;
 }
@@ -39,6 +45,10 @@ a {
   background-color: #0C4B26;
 }
 
+.sps-green-text {
+  color: #0C4B26;
+}
+
 .sps-orange {
   background-color: #F9BF17;
 }
@@ -46,6 +56,11 @@ a {
 .sps-light-green {
   background-color: #6B9354;
 }
+
+.sps-light-green-text {
+  color: #6B9354;
+}
+
 
 .sps-greenish {
   background-color: #90A747;
@@ -106,8 +121,10 @@ i.icons {
 }
 
 .logo {
-  width: 90%;
+  width: 100%;
   height: auto;
+  min-width: 100px;
+  min-height: 100px;
 }
 
 html, body {
@@ -154,6 +171,8 @@ html, body {
   margin-left: 5px;
   height: 30px;
   width: 28%;
+  text-decoration: none;
+  border: none;
 }
 
 .main-container .inner-container section div h1 {
@@ -227,11 +246,10 @@ html, body {
   .main-container .inner-container nav li {
     width: 100%;
     text-align: center;
-    padding: 10px 0;
   }
 
   .main-container .inner-container section div h1 {
-    font-size: 40pt;
+    font-size: 30pt;
   }
 
   .main-container .inner-container section div p {
@@ -244,7 +262,16 @@ html, body {
 
   .main-container .inner-container nav .top-nav-50 .marginer {
     width: 100%;
-    padding: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-container .inner-container section div h1 {
+    font-size: 20pt;
+  }
+
+  .main-container .inner-container section div p {
+    font-size: 15pt;
   }
 }
 
@@ -680,11 +707,23 @@ footer .main-container .inner-container .footer-divider {
 
 .main-container .inner-container .news-section figcaption {
   font-family: 'PT Sans', sans-serif;
+  font-size: 13pt;
 }
 
 .news-title {
   font-family: 'PT Sans', sans-serif;
   font-size: 12pt;
+}
+
+@media (max-width: 980px) {
+  .main-container .inner-container .news-section div {
+    width: 100%;
+    padding: 0;
+  }
+
+  .main-container .inner-container .news-section figcaption {
+    padding: 5px 0 20px 0;
+  }
 }
 
 
