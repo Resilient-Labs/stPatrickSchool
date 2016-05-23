@@ -1,3 +1,24 @@
+
+.hide {
+  display: none;
+}
+
+.hamburgerMenuIcon {
+    display: none;
+  }
+
+@media (max-width: 640px) {
+
+  .hamburgerMenuIcon {
+    float: left;
+    line-height: 40px;
+    color: white;
+    display: inline-block;
+  }
+
+}
+
+
 a {
   text-decoration: none;
   list-style: none;
@@ -85,7 +106,6 @@ a {
 
 .top-nav-50 {
   float: right;
-  width: 50%;
 }
 
 .main-container .inner-container nav .top-nav-50 ul {
@@ -121,10 +141,9 @@ i.icons {
 }
 
 .logo {
-  width: 100%;
-  height: auto;
-  min-width: 100px;
-  min-height: 100px;
+  width: 120px;
+  margin: 0 auto;
+  display: block;
 }
 
 html, body {
@@ -144,11 +163,10 @@ html, body {
 
 .main-container .inner-container .logo-container {
   float: left;
-  width: 15%;
+  width: 100%;
 }
 
 .main-container .inner-container section .title {
-  margin-left: 20px;
   float: left;
   width: 40.7%;
 }
@@ -156,13 +174,13 @@ html, body {
 .main-container .inner-container section .search {
   float: left;
   width: 42.5%;
-  height: 175px;
+  height: 65px;
   display: flex;
   align-items: center;
 }
 
 .main-container .inner-container section div textarea {
-  width: 60%;
+  width: 65%;
   height: 25px;
 }
 
@@ -180,8 +198,6 @@ html, body {
   font-weight: bold;
   text-align: left;
   font-size: 26pt;
-  margin-bottom: -20px;
-  margin-top: 50px;
 }
 
 .main-container .inner-container section div p {
@@ -189,7 +205,6 @@ html, body {
   text-align: left;
   font-size: 18pt;
   font-weight: 100;
-  margin: 0;
 
 }
 
@@ -213,6 +228,19 @@ html, body {
 }
 
 
+@media (max-width: 480px) {
+  .main-container .inner-container nav .top-nav-50 .marginer {
+    width: 74px;
+  }
+}
+
+
+@media (min-width: 0px) and (max-width: 320px) {
+  .main-container .inner-container nav .top-nav-50 .marginer {
+    width: 75px;
+    margin-right: 0;
+  }
+}
 
 
 
@@ -220,8 +248,12 @@ html, body {
 
 
 
-
-
+@media (min-width: 481px) and (max-width: 980px){
+  .main-container .inner-container nav .top-nav-50 .marginer {
+    width: 84px;
+    float: left;
+  }
+}
 
 
 
@@ -240,40 +272,125 @@ html, body {
   }
 
   .main-container .inner-container nav .top-nav-50 {
-    width: 100%;
+    margin-left: 0;
+    display: flex;
   }
 
   .main-container .inner-container nav li {
-    width: 100%;
+    width: 50%;
     text-align: center;
-  }
-
-  .main-container .inner-container section div h1 {
-    font-size: 30pt;
-  }
-
-  .main-container .inner-container section div p {
-    font-size: 20pt;
   }
 
   .main-container .inner-container nav .top-nav-50 ul {
     float: none;
   }
-
-  .main-container .inner-container nav .top-nav-50 .marginer {
-    width: 100%;
-  }
 }
+
 
 @media (max-width: 480px) {
   .main-container .inner-container section div h1 {
-    font-size: 20pt;
-  }
-
+    font-weight: bold;
+    width: 40%;
+    font-size: 12pt;
+    line-height: 20px;
+    float: left;
+    margin: 0;
+    text-align: center;
+  } 
   .main-container .inner-container section div p {
-    font-size: 15pt;
+    font-weight: lighter;
+    font-size: 12pt;
+    line-height: 20px;
+    float: left;
+    width: 50%;
+    margin: 0;
+    text-align: center;
   }
 }
+
+@media (min-width: 640px) {
+  .hide {
+    display: inline-block;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 980px) {
+  .main-container .inner-container section .title {
+    width: 60%;
+    padding: 2% 0;
+  }
+
+  .main-container .inner-container section div h1 {
+    font-weight: bold;
+    width: 100%;
+    font-size: 20pt;
+    line-height: 32px;
+    float: left;
+    margin: 0;
+    text-align: left;
+  } 
+  .main-container .inner-container section div p {
+    font-weight: lighter;
+    font-size: 16pt;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .main-container .inner-container .logo-container {
+    width: 40%;
+  }
+
+  .main-container .inner-container section .search {
+    width: 50%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+
+
+
+@media (min-width: 981px) {
+
+  .main-container .inner-container section .title {
+    width: 60%;
+    padding: 25px 0;
+  }
+
+  .main-container .inner-container section div h1 {
+    font-weight: bold;
+    width: 100%;
+    font-size: 25pt;
+    line-height: 32px;
+    float: left;
+    margin: 0;
+    text-align: left;
+  } 
+  .main-container .inner-container section div p {
+    font-weight: lighter;
+    font-size: 15pt;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+  }
+
+  .main-container .inner-container .logo-container {
+    width: 30%;
+  }
+
+  .main-container .inner-container section .search {
+    width: 50%;
+  }
+
+  .logo {
+    width: 150px;
+  }
+}
+      
+
+ 
 
 
 
@@ -579,7 +696,7 @@ footer .main-container .inner-container .footer-divider {
 }
 
 .main-container .inner-container .about-sps-text {
-  font-family: 'PT Sans', sans-serif;
+  font-family: Helvetica,'PT Sans', sans-serif;
   text-decoration: none;
 }
 
