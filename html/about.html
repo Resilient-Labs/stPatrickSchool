@@ -1,71 +1,64 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+  <title>About Us</title>
   <link rel="stylesheet" href="../css/styles.css">
   <link rel="stylesheet" href="../css/font-awesome.css">
   <link href='https://fonts.googleapis.com/css?family=PT+Sans' rel='stylesheet' type='text/css'>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
   <meta http-equiv="cache-control" content="no-cache" />
   <meta http-equiv="Content-Type" content="application/vnd.wap.xhtml+xml" />
   <meta name="HandheldFriendly" content="True" />
-  <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
+<body>
 
+<!-- HEADER NAVIGATION -->
+<header class="sps-green">
+  <!-- TOP NAVIGATION -->
+  <nav class="top-navigation">
+    <!-- #hamburger starts -->
+    <div id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div> <!-- #hamburger ends -->
+    <ul>
+      <li class="top-navigation-links"><a href="news.html">News</a></li>
+      <li class="top-navigation-links"><a href="calendar.html">Calendar</a></li>
+      <li class="top-navigation-links"><a href="contact.html">Contact Us</a></li>
+    </ul>
+  </nav> <!-- TOP NAVIGATION ENDS -->
+  <!--MID NAVIGATION -->
+  <section class="sps-light-green ">
+    <nav class="mid-navigation">
+      <div class="header-img">
+        <a href="index.html"><img src="../mocks/logo.png"></a>
+      </div>
+      <div class="header-title">
+        <h1 class="sps-white">St. Patrick School</h1>
+        <p class="sps-white">Roxbury, MA | est. 1888</p>
+      </div>
+      <div class="header-search">
+        <textarea placeholder="Search ..."></textarea>
+        <button class="sps-yellow">Search</button>
+      </div>
+    </nav>
+    <!--MID NAVIGATION ENDS-->
+  </section>
 
-<div class="sps-green main-container">
-    <div class="inner-container">
-      <nav class="top-nav">
-        <a class="hamburgerMenuIcon" onclick="return false;" href=""><i class="fa fa-bars" aria-hidden="true"></i>
-</a>
-        <div class="top-nav-50">
-          <ul>
-            <li class="sps-white marginer"><a href="calendar.html">Calendar</a></li>
-            <li class="sps-white marginer"><a href="news.html">News</a></li>
-            <li class="sps-white marginer right-margin"><a href="">Contact Us</a></li>
-          </ul>
-        </div>
-
-      </nav>
-    </div> 
-  </div>
-
-  <div class="sps-light-green main-container">
-    <div class="inner-container">
-      <section>
-        <div class="logo-container">
-         <img class="padder logo" src="../mocks/logo.png">
-        </div>
-        <div class="title">
-          <h1 class="sps-white padder">St. Patrick School</h1>
-          <p class="sps-white padder">Roxbury, MA | est. 1888</p>
-        </div>
-        <div class="search">
-          <textarea>Search...</textarea><button class="sps-orange">Search</button>
-        </div>
-      </section>
-    </div>
-  </div>
-
-
-
-  <div class="botnav hide sps-green main-container">
-    <div class="inner-container">
-      <nav>
-        <ul>
-          <li class="sps-white"><a href="">About</a></li>
-          <li class="sps-white"><a href="">Academics</a></li>
-          <li class="sps-white"><a href="">Student Life</a></li>
-          <li class="sps-white"><a href="">Admissions</a></li>
-          <li class="sps-white"><a href="">Giving</a></li>
-          <li class="sps-white"><a href="">Alumni</a></li>
-        </ul>
-      </nav>
-    </div> 
-  </div>
-
-
-
+  <!--BOTTOM NAVIGATION -->
+  <nav class="bottom-navigation">
+    <ul>
+      <li class="sps-white"><a href="about.html">About</a></li>
+      <li class="sps-white"><a href="">Academics</a></li>
+      <li class="sps-white"><a href="">Student Life</a></li>
+      <li class="sps-white"><a href="">Admissions</a></li>
+      <li class="sps-white"><a href="">Giving</a></li>
+      <li class="sps-white"><a href="">Alumni</a></li>
+    </ul>
+  </nav> <!--BOTTOM NAVIGATION ENDS-->
+</header>  <!-- HEADER NAVIGATION -->
 
 
   <div class="main-container">
@@ -203,13 +196,11 @@
     
   </footer>
 
-  <script type="text/javascript">
-    $(document).ready(function () {
-    $(".hamburgerMenuIcon").click(function () {
-      $(".botnav").toggle();
-    });
-  });
-  </script>
+
+<!-- JQuery Script link-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+<!-- JS Script link-->
+<script type="text/javascript" src="../js/script.js"></script>
 
 </body>
 </html>
